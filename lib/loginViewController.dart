@@ -1,6 +1,7 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:gwm/constants.dart';
+import 'package:gwm/registerViewController.dart';
 
 class Login extends StatefulWidget {
   @override
@@ -111,15 +112,15 @@ class _LoginState extends State<Login> {
                           EdgeInsets.symmetric(horizontal: 28, vertical: 10),
                       child: CupertinoButton(
                         onPressed: () {
-                          // Navigator.push(
-                          //   context,
-                          //   MaterialPageRoute(
-                          //     builder: (context) => RecoverPassword(),
-                          //   ),
-                          // );
+                          Navigator.push(
+                            context,
+                            MaterialPageRoute(
+                              builder: (context) => Register(),
+                            ),
+                          );
                         },
                         child: Text(
-                          "Registrarme",
+                          "Regístro",
                           style: sonoroH1Blue,
                         ),
                       ),
