@@ -1,6 +1,7 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:gwm/constants.dart';
+import 'package:gwm/homeViewController.dart';
 import 'package:gwm/registerViewController.dart';
 
 class Login extends StatefulWidget {
@@ -137,12 +138,12 @@ class _LoginState extends State<Login> {
                       // padding: EdgeInsets.symmetric(horizontal: size.width * 0.25),
                       child: Text("Iniciar sesión"),
                       onPressed: () {
-                        // Navigator.push(
-                        //   context,
-                        //   MaterialPageRoute(
-                        //     builder: (context) => Plans(),
-                        //   ),
-                        // );
+                        Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                            builder: (context) => HomePage(),
+                          ),
+                        );
                       },
                     ),
                   ),
